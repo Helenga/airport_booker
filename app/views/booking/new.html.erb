@@ -1,0 +1,18 @@
+<%= render 'layouts/header_flight_info' %>
+	
+	<h1>Book for <%= @flight.info %></h1>
+	<%= form_for(@flight, url: '/booking', method: :patch) do |f| %>
+		<%= f.hidden_field :id, :value => @flight.id %>
+		<div class='form'>
+		<%= f.fields_for :passengers do |p| %>
+		<div class='passenger_form'>
+			<span>Add passenger</span><br>
+			<%= p.label 'Enter your name:' %><br>
+			<%= p.text_field :name %><br>
+			<%= p.label 'Enter your email:' %><br>
+			<%= p.email_field :email %><br>
+		</div>
+		<% end %>
+		<%= f.submit 'Book' %>
+<% end %>
+</div>

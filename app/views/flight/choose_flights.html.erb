@@ -1,0 +1,12 @@
+<%= render 'header' %>
+
+<h1>Found flights from <%= "#{Flight.airport_name(params[:flight][:from_airport])} to 
+		#{Flight.airport_name(params[:flight][:to_airport])}" %></h1>
+<div class='links_table'>
+	<% @suitable_flights.each do |flight| %>
+		<div class='flight_link'><%= link_to "Flight № #{flight.route}
+		leaves on #{flight.departure.to_date} at 
+		#{flight.departure.strftime("%H:%M")}", flight %>
+		<%= render 'booking_form', locals: {id: flight.id}  %></div>
+	<% end %>
+</div>

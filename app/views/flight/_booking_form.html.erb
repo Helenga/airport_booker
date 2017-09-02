@@ -1,0 +1,5 @@
+<%= form_tag(new_booking_path, method: :get) do %>
+	<%= hidden_field_tag :flight_id, locals[:id] %>
+	<%= hidden_field_tag :number_of_passengers, @tickets.to_i %>
+	<%= submit_tag 'Book it now' %>
+<% end %>

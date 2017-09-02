@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  departure_date: 2017-08-22 12:46:20
+  departure_time: 2017-08-22 12:46:20
+  route: MyString
+
+two:
+  departure_date: 2017-08-22 12:46:20
+  departure_time: 2017-08-22 12:46:20
+  route: MyString

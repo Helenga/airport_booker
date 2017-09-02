@@ -1,0 +1,10 @@
+<%= render 'header' %>
+
+	<h1>All flights</h1>
+	<div class='links_table'>
+	<% @flights.each do |flight| %>
+		<div class='flight_link'><%= link_to flight.info, flight %></div>
+	<% end %>
+</div>
+
+

@@ -1,0 +1,16 @@
+<% content_for :header do %>
+<div id='choose_flight'>  
+<%= form_tag(root_path, method: 'get') do %>
+  <span>From</span>
+  <%= collection_select(:flight, :from_airport, Airport.all, :id, :name) %>
+  <span>To</span>
+  <%= collection_select(:flight, :to_airport, Airport.all, :id, :name) %>
+  <span>Date of departure</span>
+  <%= select(:flight, :departure, @dates_of_departure) %>
+  <span>Number of passengers</span>
+  <%= select_tag(:number_of_passengers, 
+				  options_for_select([[1, 1],[2, 2],[3, 3],[4, 4]])) %>
+  <span><%= submit_tag '>' %></span>
+<% end %>
+</div>
+<% end %>

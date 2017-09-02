@@ -1,0 +1,10 @@
+<%= content_for :header do %>
+	<%= render 'layouts/header_flight_info' %>
+<% end %>
+
+<div class='flight_info'>
+	<%= @flight.info %>
+</div>
+<div class='passenger_info'>
+	<span><%= @flight.passengers.count %> places already took</span> 
+</div>
