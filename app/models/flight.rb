@@ -1,6 +1,6 @@
 class Flight < ApplicationRecord
-	belongs_to :from_airport, class_name: 'Airport'
-	belongs_to :to_airport, class_name: 'Airport'
+	belongs_to :from_airport, class_name: 'Airport', foreign_key: :id
+	belongs_to :to_airport, class_name: 'Airport', foreign_key: :id
 	
 	has_many :bookings, foreign_key: :flight_id
 	has_many :passengers, through: :bookings, inverse_of: :flights
