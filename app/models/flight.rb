@@ -1,6 +1,6 @@
 class Flight < ApplicationRecord
-	belongs_to :from_airport, class_name: 'Airport', foreign_key: :id
-	belongs_to :to_airport, class_name: 'Airport', foreign_key: :id
+	belongs_to :from_airport, class_name: 'Airport'
+	belongs_to :to_airport, class_name: 'Airport'
 	
 	has_many :bookings, foreign_key: :flight_id
 	has_many :passengers, through: :bookings, inverse_of: :flights
@@ -8,8 +8,8 @@ class Flight < ApplicationRecord
 	
 	def info
 		"Flight № #{self.route}
-		from #{Flight.airport_name(self.from_airport)} to 
-		#{Flight.airport_name(self.to_airport)} leaves on 
+		from #{Flight.airport_name(self.from_airport_id)} to 
+		#{Flight.airport_name(self.to_airport_id)} leaves on 
 		#{self.departure.to_date} at 
 		#{self.departure.strftime("%H:%M")}"
 	end

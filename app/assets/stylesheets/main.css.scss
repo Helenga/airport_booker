@@ -4,7 +4,7 @@ html, body {
 	box-sizing: border-box;
 	height: 100%;
 	width: 100%;
-	background-image: url('<%= asset_path("background.jpg") %>');
+	background-image: url("background.jpg");
 	background-size: cover;
 }
 
