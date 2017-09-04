@@ -1,9 +1,10 @@
+//= depend_on_asset "background.jpg"
 html, body {
 	display: block;
 	box-sizing: border-box;
 	height: 100%;
 	width: 100%;
-	background-image: url(background.jpg);
+	background-image: url('<%= asset_path("background.jpg") %>');
 	background-size: cover;
 }
 
