@@ -34,8 +34,6 @@ ActiveRecord::Schema.define(version: 20170824134534) do
     t.datetime "updated_at", null: false
     t.integer "from_airport_id"
     t.integer "to_airport_id"
-    t.index ["from_airport_id"], name: "index_flights_on_from_airport_id"
-    t.index ["to_airport_id"], name: "index_flights_on_to_airport_id"
   end
 
   create_table "passengers", force: :cascade do |t|
