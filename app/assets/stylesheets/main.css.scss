@@ -61,17 +61,15 @@ content {
 		text-align: center;
 	}
 	.edit_flight {
-		position: relative;
 		width: 90%;
 		height: 90%;
 		display: block;
 		margin: auto;
-		input {
+		input[type=submit] {
 			margin-bottom: 0;
 			margin-right: 0;
 		}
 		.passenger_form {
-			position: absolute;
 			display: inline-block;
 			margin: 1em;
 			overflow: auto;
