@@ -30,17 +30,18 @@ header {
 		font-weight: bold;
 	}
 }
+
 content {
 	height: auto;
 	margin: 2em;
 	display: block;
+}
 	.links_table {
 		margin-top: 2em;
 		background-color: rgba(41, 188, 113, 0.3);
 		border: 0.5em rgba(41, 188, 113, 0.2) solid;
 		width: auto;
-		.flight_link {
-			
+		.flight_link {			
 			text-align: center;
 			padding: 2em 0.5em;
 			height: 2em;
@@ -59,24 +60,22 @@ content {
 	h1 {
 		text-align: center;
 	}
-.form {
-	position: relative;
-	width: 90%;
-	display: block;
-	input {
-		margin-bottom: 0;
-		margin-left: 0;
-	}
-	.passenger_form {
-		position: absolute;
-		display: inline-block;
-		margin: 1em;
-		overflow: auto;
-}
+	.form {
+		position: relative;
+		width: 90%;
+		display: block;
+		input {
+			margin-bottom: 0;
+			margin-left: 0;
+		}
+		.passenger_form {
+			position: absolute;
+			display: inline-block;
+			margin: 1em;
+			overflow: auto;
+		}
 }
 
-
-}
 .go_root {
 	float: right;
 	padding: 2em;
