@@ -3,10 +3,10 @@
 <% end %>
 	
 <h1>Book for <%= @flight.info %></h1>
-<div class='form'>
+
 	<%= form_for(@flight, url: '/booking', method: :patch) do |f| %>
+		<div class='form'>
 		<%= f.hidden_field :id, :value => @flight.id %>
-		
 		<%= f.fields_for :passengers do |p| %>
 		<div class='passenger_form'>
 			<span>Add passenger</span><br>
@@ -17,5 +17,6 @@
 		</div>
 		<% end %>
 		<%= f.submit 'Book' %>
+		</div>
 <% end %>
-</div>
+
