@@ -1,7 +1,7 @@
 <%= render 'header' %>
 
-<h1>Found flights from <%= "#{Flight.airport_name(params[:flight][:from_airport])} to 
-		#{Flight.airport_name(params[:flight][:to_airport])}" %></h1>
+<h1>Found flights from <%= "#{Flight.airport_name(params[:flight][:from_airport_id])} to 
+		#{Flight.airport_name(params[:flight][:to_airport_id])}" %></h1>
 <div class='links_table'>
 	<% @suitable_flights.each do |flight| %>
 		<div class='flight_link'><%= link_to "Flight № #{flight.route}
