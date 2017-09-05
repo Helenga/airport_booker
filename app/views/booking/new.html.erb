@@ -1,4 +1,6 @@
-<%= render 'layouts/header_flight_info' %>
+<%= content_for :header do %>
+	<%= render 'layouts/header_flight_info' %>
+<% end %>
 	
 	<h1>Book for <%= @flight.info %></h1>
 	<%= form_for(@flight, url: '/booking', method: :patch) do |f| %>
