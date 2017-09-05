@@ -9,7 +9,7 @@
 		<%= f.hidden_field :id, :value => @flight.id %>
 		<%= f.fields_for :passengers do |p| %>
 		<div class='passenger_form'>
-			<span>Add passenger</span><br>
+			<h4>Add passenger</h4><br>
 			<%= p.label 'Enter your name:' %><br>
 			<%= p.text_field :name %><br>
 			<%= p.label 'Enter your email:' %><br>
