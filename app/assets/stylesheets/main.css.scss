@@ -66,6 +66,7 @@ content {
 		height: 100%;
 		display: block;
 		margin: auto;
+		color: #632D2D;
 		input[type=submit] {
 			margin-bottom: 0;
 			margin-right: 0;
@@ -73,6 +74,7 @@ content {
 		.passenger_form {
 			display: inline-block;
 			margin: 0.5em;
+			padding: 1em;
 			overflow: auto;
 			border: 0.5em rgba(41, 188, 113, 0.2) solid;
 			input {
@@ -80,6 +82,10 @@ content {
 				padding: 12px 20px;
 				margin: 8px 0;
 				box-sizing: border-box;
+			}
+			span {
+				margin-bottom: 1em;
+				font-size: bold;
 			}
 		}
 }
