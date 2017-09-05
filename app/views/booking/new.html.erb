@@ -2,10 +2,11 @@
 	<%= render 'layouts/header_flight_info' %>
 <% end %>
 	
-	<h1>Book for <%= @flight.info %></h1>
+<h1>Book for <%= @flight.info %></h1>
+<div class='form'>
 	<%= form_for(@flight, url: '/booking', method: :patch) do |f| %>
 		<%= f.hidden_field :id, :value => @flight.id %>
-		<div class='form'>
+		
 		<%= f.fields_for :passengers do |p| %>
 		<div class='passenger_form'>
 			<span>Add passenger</span><br>
