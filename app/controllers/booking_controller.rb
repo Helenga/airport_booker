@@ -9,9 +9,10 @@ class BookingController < ApplicationController
 		@flight = Flight.find_by_id(params[:flight][:id])
 		@flight.update(passenger_params)
 		if @flight.save 
-			redirect_to @flight
+			redirect_to @flight, notice: "Passengers were successfully added"
 		else
 			render 'new'
+			flash.now[:notice] = "Wrong name or email"
 		end
 	end
 	
