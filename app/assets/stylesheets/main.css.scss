@@ -69,7 +69,7 @@ content {
 		color: #632D2D;
 		input[type=submit] {
 			margin-bottom: 0;
-			margin-right: 0;
+			width: 100%;
 		}
 		.passenger_form {
 			display: inline-block;
@@ -84,8 +84,8 @@ content {
 				box-sizing: border-box;
 			}
 			span {
-				margin-bottom: 1em;
-				font-size: bold;
+				padding-bottom: 1em;
+				font-weight: bold;
 			}
 		}
 }
