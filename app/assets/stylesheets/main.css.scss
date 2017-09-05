@@ -5,7 +5,6 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background-image: url("background.jpg");
-	
 	background-size: cover;
 }
 
@@ -46,7 +45,7 @@ content {
 			text-align: center;
 			padding: 2em 0.5em;
 			height: 2em;
-			:hover { background-color: rgba(41, 188, 113, 0.5) }
+			:focus { background-color: rgba(41, 188, 113, 0.5) }
 			a { 
 				padding: 2em 0.5em; 
 				font-size: bold;
@@ -105,8 +104,8 @@ content {
 	font-style: oblique;
 }
 
-.passenger_inform {
-	
+.passengers_info {
+	margin: 2em;
 }
 
 h1 {
@@ -120,5 +119,7 @@ a {
 }
 
 .flash {
-
+	padding: 1em;
+	margin: 1em 0.5em;
+	border: #432992 solid;
 }
