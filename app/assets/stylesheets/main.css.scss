@@ -72,10 +72,10 @@ content {
 		}
 		.passenger_form {
 			display: inline-block;
-			margin: 0,5em;
+			margin: 0.5em;
 			overflow: auto;
 			border: 0.5em rgba(41, 188, 113, 0.2) solid;
-			input[type=text] {
+			input {
 				width: 100%;
 				padding: 12px 20px;
 				margin: 8px 0;
