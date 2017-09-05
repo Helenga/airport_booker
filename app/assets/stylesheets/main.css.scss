@@ -63,8 +63,9 @@ content {
 	.form {
 		position: relative;
 		width: 90%;
-		height: 50%;
+		height: auto;
 		display: block;
+		margin: auto;
 		input {
 			margin-bottom: 0;
 			margin-right: 0;
